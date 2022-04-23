@@ -33,10 +33,13 @@ modules:
     - mkdir /app/main
     - cp -R penpot/penpot-linux-x64/* /app/main
     - install -D -t /app/bin penpot.sh
+    - install -D -t /app/share/applications flatpak/com.github.vikdevelop.penpot.desktop
+    - install -D -t /app/share/metainfo flatpak/com.github.vikdevelop.penpot.metainfo.xml
+    - install -D -t /app/share/icons/hicolor/128x128/apps flatpak/icons/com.github.vikdevelop.penpot.jpeg
     sources:
       - type: archive
         url: https://github.com/vikdevelop/penpot/archive/refs/tags/1.0.tar.gz
-        sha256: 91800fd680c081271e309db2a3ff9a355c1f13a9f8a89df1ba39664db072a37d
+        sha256: 1c818c8f771e884e15bab8c37a57f18af5a95e4efaa4820beda8c3f96cfea44a
       - type: script
         dest-filename: penpot.sh
         commands:
