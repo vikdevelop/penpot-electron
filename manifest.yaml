@@ -34,11 +34,9 @@ modules:
     - cp -R penpot/penpot-linux-x64/* /app/main
     - install -D -t /app/bin penpot.sh
     sources:
-      - type: dir
-        path: /mnt/sda1/General/apps/penpot
-      #- type: archive
-        #url: https://github.com/vikdevelop/photopea_app/archive/refs/tags/2.1.tar.gz
-        #sha256: 797b8cec4c134e2d7e18ee51fa7cd46e10d6877a6308d11dfaa2bd2c134c75a0
+      - type: archive
+        url: https://github.com/vikdevelop/penpot/archive/refs/tags/1.0.tar.gz
+        sha256: 91800fd680c081271e309db2a3ff9a355c1f13a9f8a89df1ba39664db072a37d
       - type: script
         dest-filename: penpot.sh
         commands:
