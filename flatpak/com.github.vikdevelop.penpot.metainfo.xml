@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+    <id>com.github.vikdevelop.penpot</id>
+    <launchable type="desktop-id">com.github.vikdevelop.penpot.desktop</launchable>
+    <name>Penpot</name>
+    <summary>Open-source prototyping and design platform</summary>
+    <metadata_license>CC0-1.0</metadata_license>
+    <project_license>MIT</project_license>
+
+    <description>
+        <p>Penpot is the first Open Source design and prototyping platform meant for cross-domain teams. Non dependent on operating systems, Penpot is web based and works with open web standards (SVG). For all and empowered by the community.</p>
+    </description>
+
+    <url type="homepage">https://penpot.app</url>
+    <url type="help">https://help.penpot.app/</url>
+
+    <screenshots>
+        <screenshot type="default">
+            <image>https://raw.githubusercontent.com/vikdevelop/penpot/main/screnshots/penpot_home.png</image>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/vikdevelop/penpot/main/screnshots/penpot_login.png</image>
+        </screenshot>
+    </screenshots>
+
+    <content_rating type="oars-1.1"/>
+
+    <categories>
+        <category>Tool</category>
+    </categories>
+
+    <releases>
+        <release version="1.0" date="2022-04-23">
+        </release>
+  </releases>
+</component>
