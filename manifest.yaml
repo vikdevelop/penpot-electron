@@ -38,8 +38,8 @@ modules:
     - install -D -t /app/share/icons/hicolor/128x128/apps flatpak/icons/com.github.vikdevelop.penpot.png
     sources:
       - type: archive
-        url: https://github.com/vikdevelop/penpot/archive/refs/tags/0.1.tar.gz
-        sha256: 5b40b7c5646140952f2c56d3533cbc8765f59466b54c85fad58f5da3c7caddb5
+        url: https://github.com/vikdevelop/penpot/archive/refs/tags/0.2.tar.gz
+        sha256: adc3872f799d493a2938a67bb40d30a5ff82f9e6816efc023ca702068ff24b46
       - type: script
         dest-filename: penpot.sh
         commands:
