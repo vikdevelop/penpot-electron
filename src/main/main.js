@@ -15,7 +15,7 @@ function createWindow () {
     }
   })
   mainWindow.setMenuBarVisibility(false)
-  mainWindow.loadURL('https://design.penpot.app/#/auth/login')
+  mainWindow.loadURL('https://design.penpot.app')
 }
 
 app.whenReady().then(() => {
