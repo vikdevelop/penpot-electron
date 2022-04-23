@@ -1,0 +1,45 @@
+app-id: com.github.vikdevelop.penpot
+runtime: org.freedesktop.Platform
+runtime-version: '21.08'
+sdk: org.freedesktop.Sdk
+base: org.electronjs.Electron2.BaseApp
+base-version: "21.08"
+command: penpot.sh
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.node16
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --share=network
+  - --filesystem=xdg-download
+  - --device=dri
+build-options:
+  append-path: /usr/lib/sdk/node16/bin
+  env:
+    NPM_CONFIG_LOGLEVEL: info
+modules:
+  - name: penpot
+    buildsystem: simple
+    build-options:
+        env:
+          XDG_CACHE_HOME: /run/build/penpot/flatpak-node/cache
+        build-args:
+        - --share=network
+    build-commands:
+    - yarn
+    - mkdir penpot
+    - yarn electron-packager ./ penpot --platform=linux --arch=x64 --electron-version=15.4.1 --out=penpot/
+    - mkdir /app/main
+    - cp -R penpot/penpot-linux-x64/* /app/main
+    - install -D -t /app/bin penpot.sh
+    sources:
+      - type: dir
+        path: /mnt/sda1/General/apps/penpot
+      #- type: archive
+        #url: https://github.com/vikdevelop/photopea_app/archive/refs/tags/2.1.tar.gz
+        #sha256: 797b8cec4c134e2d7e18ee51fa7cd46e10d6877a6308d11dfaa2bd2c134c75a0
+      - type: script
+        dest-filename: penpot.sh
+        commands:
+          - zypak-wrapper.sh /app/main/penpot "$@"
