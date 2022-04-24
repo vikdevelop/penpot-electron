@@ -8,7 +8,21 @@
     <project_license>MIT</project_license>
 
     <description>
-        <p>Penpot is the first Open Source design and prototyping platform meant for cross-domain teams. Non dependent on operating systems, Penpot is web based and works with open web standards (SVG). For all and empowered by the community.</p>
+        <p>Penpot is the first Open Source design and prototyping platform meant for cross-domain teams a works with open web standards (SVG). This is a gret alternative of Figma.</p>
+        <p>Features:</p>
+        <ul>
+            <li>Supports unlimited projects</li>
+            <li>Large artboards selection: mobile, web, tablet, social media posters, and custom</li>
+            <li>Unlimited users with roles and different permissions</li>
+            <li>Layer support</li>
+            <li>Open-source</li>
+            <li>Eases real-time collaboration between team members</li>
+            <li>Export artboards to PDF</li>
+            <li>Comments tool and Comment viewer</li>
+            <li>Shared libraries among teams</li>
+            <li>Download the source image with SVG and CSS support.</li>
+        </ul>
+        <p>NOTE: This app is electron wrapper of Penpot web app.</p>
     </description>
 
     <url type="homepage">https://penpot.app</url>
