@@ -2,5 +2,5 @@
 Name=Penpot
 Icon=com.github.vikdevelop.penpot-electron
 Exec=penpot-electron.sh
-Categories=Tools
+Categories=Internet
 Type=Application
