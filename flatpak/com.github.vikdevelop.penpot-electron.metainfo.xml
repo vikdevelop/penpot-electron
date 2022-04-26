@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-    <id>com.github.vikdevelop.penpot</id>
-    <launchable type="desktop-id">com.github.vikdevelop.penpot.desktop</launchable>
+    <id>com.github.vikdevelop.penpot-electron</id>
+    <launchable type="desktop-id">com.github.vikdevelop.penpot-electron.desktop</launchable>
     <name>Penpot</name>
     <summary>Open-source prototyping and design platform</summary>
     <metadata_license>CC0-1.0</metadata_license>
@@ -22,7 +22,7 @@
             <li>Shared libraries among teams</li>
             <li>Download the source image with SVG and CSS support.</li>
         </ul>
-        <p>NOTE: This app is electron wrapper of Penpot web app.</p>
+        <p>NOTE: This app is Electron wrapper of Penpot web app.</p>
     </description>
 
     <url type="homepage">https://penpot.app</url>
@@ -30,17 +30,17 @@
 
     <screenshots>
         <screenshot type="default">
-            <image>https://raw.githubusercontent.com/vikdevelop/penpot/main/screnshots/penpot_home.png</image>
+            <image>https://raw.githubusercontent.com/vikdevelop/penpot-electron/main/screnshots/penpot_home.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/vikdevelop/penpot/main/screnshots/penpot_login.png</image>
+            <image>https://raw.githubusercontent.com/vikdevelop/penpot-electron/main/screnshots/penpot_login.png</image>
         </screenshot>
     </screenshots>
 
     <content_rating type="oars-1.1"/>
 
     <categories>
-        <category>Tool</category>
+        <category>Tools</category>
     </categories>
 
     <releases>
