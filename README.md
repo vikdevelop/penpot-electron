@@ -1,4 +1,4 @@
-# penpot
+# penpot-electron
 electron wrapper of https://penpot.app
 ![Screnshot](https://github.com/vikdevelop/penpot/blob/main/screnshots/penpot_home.png)
 ### Installation
