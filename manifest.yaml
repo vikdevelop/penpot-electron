@@ -33,9 +33,9 @@ modules:
     - mkdir /app/main
     - cp -R penpot/penpot-linux-x64/* /app/main
     - install -D -t /app/bin penpot.sh
-    - install -D -t /app/share/applications flatpak/com.github.vikdevelop.penpot.desktop
-    - install -D -t /app/share/metainfo flatpak/com.github.vikdevelop.penpot.metainfo.xml
-    - install -D -t /app/share/icons/hicolor/128x128/apps flatpak/icons/com.github.vikdevelop.penpot.png
+    - install -D -t /app/share/applications flatpak/com.github.vikdevelop.penpot-electron.desktop
+    - install -D -t /app/share/metainfo flatpak/com.github.vikdevelop.penpot-electron.metainfo.xml
+    - install -D -t /app/share/icons/hicolor/128x128/apps flatpak/icons/com.github.vikdevelop.penpot-electron.png
     sources:
       - type: archive
         url: https://github.com/vikdevelop/penpot-electron/archive/refs/tags/0.2.1.tar.gz
