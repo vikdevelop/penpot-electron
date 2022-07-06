@@ -28,10 +28,10 @@ modules:
     build-commands:
     - yarn
     - mkdir penpot
-    - yarn electron-packager ./ penpot --platform=linux --arch=x64 --electron-version=15.4.1 --out=penpot/
+    - yarn electron-packager ./ penpot-electron --platform=linux --arch=x64 --electron-version=15.4.1 --out=penpot/
     - mkdir /app/main
-    - cp -R penpot/penpot-linux-x64/* /app/main
-    - install -D -t /app/bin penpot.sh
+    - cp -R penpot/penpot-electron-linux-x64/* /app/main
+    - install -D -t /app/bin penpot-electron.sh
     - install -D -t /app/share/applications flatpak/com.github.vikdevelop.penpot-electron.desktop
     - install -D -t /app/share/metainfo flatpak/com.github.vikdevelop.penpot-electron.metainfo.xml
     - install -D -t /app/share/icons/hicolor/128x128/apps flatpak/icons/com.github.vikdevelop.penpot-electron.png
