@@ -4,7 +4,7 @@ runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: "21.08"
-command: penpot.sh
+command: penpot-electron.sh
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node16
 finish-args:
@@ -22,7 +22,7 @@ modules:
     buildsystem: simple
     build-options:
         env:
-          XDG_CACHE_HOME: /run/build/penpot/flatpak-node/cache
+          XDG_CACHE_HOME: /run/build/penpot-electron/flatpak-node/cache
         build-args:
         - --share=network
     build-commands:
@@ -40,6 +40,6 @@ modules:
         url: https://github.com/vikdevelop/penpot-electron/archive/refs/tags/0.2.1.tar.gz
         sha256: e7eacaaab3e906e62c6722ea5ef59b02e87ac7bf2fae81f7700f949bc2858a62
       - type: script
-        dest-filename: penpot.sh
+        dest-filename: penpot-electron.sh
         commands:
-          - zypak-wrapper.sh /app/main/penpot "$@"
+          - zypak-wrapper.sh /app/main/penpot-electron "$@"
