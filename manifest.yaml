@@ -38,7 +38,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/vikdevelop/penpot-electron/archive/refs/tags/0.2.3.tar.gz
-        sha256: 73511462efde7ff39ccf7efb0bc8a85cdc1e692aa8120ad7484cafed7a540594
+        sha256: d7f03976aaf84ae92683ed98e48eb05dbe1787f5bfd35241f302db52973096a2
       - type: script
         dest-filename: penpot-electron.sh
         commands:
