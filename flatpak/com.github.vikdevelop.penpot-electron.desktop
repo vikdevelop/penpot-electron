@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Penpot
-Icon=com.github.vikdevelop.penpot-electron
+Icon=com.github.vikdevelop.penpot-electron_i
 Exec=penpot-electron.sh
 Categories=Internet
 Type=Application
